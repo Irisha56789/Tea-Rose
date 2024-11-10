@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Розарий ЧАЙНАЯ РОЗА</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script src="contact.js" defer></script>
+    <link rel="icon" type="image/png" href="../favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <link rel="manifest" href="../site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <div class="burger-menu">
+        <div class="burger-icon" id="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../about/about.html">О розарии</a></li>
+            <li><a href="../catalogue/catalog.html">Каталог роз</a></li>
+            <li><a href="../orders/order.html">Заказы</a></li>
+            <li><a href="../contacts/contact.html">Контакты</a></li>
+            <li><a href="../magic/magic.html">Поймай розу!</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-header">
+        <h1>КОНТАКТЫ</h1>
+        <p>
+          Будем признательны за Ваши отзывы и предложения! 
+          Ниже представлены наши контактные данные.
+        </p>
+      </section>
+
+      <section class="contact-info">
+        <div class="contact-item">
+          <h2>Почта</h2>
+          <p>
+            <a href="mailto:dataplusinfo@rambler.ru">dataplusinfo@rambler.ru</a>
+          </p>
+        </div>
+
+        <div class="contact-item">
+            <h2>Телефон</h2>
+            <p>
+                <a href="tel:+79299890718" class="contact-link"> +7 (929) 989-07-18</a>             
+            </p>
+          </div>
+
+        <div class="contact-item">
+          <h2>Telegram</h2>
+          <p>
+            <a href="https://t.me/isosnovs" target="_blank">@isosnovs</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-form">
+        <h2>Оставить отзыв</h2>
+        <form 
+          action="http://localhost/tea-rose/contacts/send-message.php" 
+          method="POST"
+          id="contactForm"
+          target="_blank"        
+        >
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Сообщение:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Tea-Rose. Все права защищены.</p>
+    </footer>
+  </body>
+</html>

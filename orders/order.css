@@ -1,0 +1,165 @@
+body { 
+  background-image: url('../background.jpg'); /* Путь к файлу с фоном */
+  background-size: cover; /* Чтобы изображение покрывало весь экран */
+  background-position: center; /* Центрирование изображения */
+  background-repeat: no-repeat; /* Не повторять изображение */
+}
+
+
+/* Бургер-меню активное состояние */
+.menu.active {
+  display: block;
+}
+
+.burger-menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+.burger-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger-icon span {
+  width: 30px;
+  height: 4px;
+  background-color: rgba(97, 17, 6, 0.6);
+  transition: all 0.3s ease;
+}
+
+/* Скрываем меню по умолчанию */
+.menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  width: 250px; /* Установить ширину меню */
+  background-color: rgba(97, 17, 6, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 10px 0;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Анимация для открытия меню */
+.menu.open {
+  display: block;
+}
+
+section {
+  padding: 5px;
+  margin: 10px auto;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Центрирование текста */
+  font-size: 20px; /* Размер шрифта можно менять здесь */
+  font-family: Garamond, 'Times New Roman', serif; /* Указание шрифта */
+  font-weight: bold;
+}
+
+#deliveries .delivery {
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+#deliveries .delivery:hover {
+  transform: scale(1.05);
+}
+
+/* Стили для заголовков */
+h2 {
+  font-family: Garamond, 'Times New Roman', serif; /* Укажите нужный шрифт */
+  font-size: 36px; /* Укажите нужный размер шрифта */
+  color: #6c2b2b; /* Цвет заголовка */
+  font-weight: bold;
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+h3 {
+  font-family: Garamond, 'Times New Roman', serif; /* Укажите нужный шрифт */
+  font-size: 24px; /* Укажите нужный размер шрифта */
+  color: #252424; /* Цвет заголовка */
+  margin-bottom: 8px; /* Отступ снизу */
+}
+
+/* Стили для абзацев */
+p {
+  font-family: Garamond, 'Times New Roman', serif; /* Укажите нужный шрифт */
+  font-size: 20px; /* Укажите нужный размер шрифта */
+  color: #444; /* Цвет текста */
+  line-height: 1.5; /* Междустрочный интервал */
+  margin-bottom: 15px; /* Отступ снизу */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #673d3d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px; /* Задаёт размер шрифта */
+  font-family: Garamond, 'Times New Roman', serif; /* Задаёт вид шрифта */
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #961616;
+}
+
+/* Стили для ошибок */
+.error {
+  color: red; /* Цвет текста ошибки */
+  font-size: 14px; /* Размер текста ошибки */
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px; /* Отступ сверху */
+  padding-bottom: 5px; /* Отступ снизу внутри footer */
+  font-size: 20px;  
+  color: black;     
+  font-weight: bold; 
+  position: relative; 
+}
+
+
+
+
+
+  

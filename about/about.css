@@ -1,0 +1,156 @@
+/* Общие стили */
+body {
+    font-family: Garamond, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #5e1818;
+}
+
+body { 
+    background-image: url('../background1.jpg'); /* Путь к файлу с фоном */
+    background-size: cover; /* Чтобы изображение покрывало весь экран */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Не повторять изображение */
+}
+
+
+
+/* Основные стили для страницы "О розарии" */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Заголовки в секциях */
+.assortment h1,
+.products h2 {
+    font-family: Garamond, 'Times New Roman', serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgb(103, 41, 41); /* Цвет заголовков  */
+}
+
+/* Заголовки в секциях */
+.location h2,
+.quality-guarantee h2 {
+    font-family: Garamond, 'Times New Roman', serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: white; /* Цвет заголовков  */
+}
+/* Параграфы в секциях */
+.about-container p,
+.assortment p,
+.products p {
+    font-family: Garamond, 'Times New Roman', serif;
+    color: black; /* Черный цвет для остальных абзацев */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Параграфы в секции Условия выращивания */
+.location p,
+.quality-guarantee p {
+    font-family: Garamond, 'Times New Roman', serif;
+    color: white; /* Белый цвет для текста в указанных секциях */
+    font-size: 24px;
+    font-weight: bold; /* Жирный текст для абзацев */
+}
+
+/* Стили секций */
+.location {
+    background-color: #979687;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.quality-guarantee {
+    background-color: #545446;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+.assortment p,
+.products p,
+.location p,
+.quality-guarantee p {
+  font-size: 24px;
+  font-weight: bold; /* Жирный текст для абзацев */
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;  
+    color: black;     
+    font-weight: bold; 
+}
+
+/* Бургер-меню активное состояние */
+.menu.active {
+    display: block;
+}
+
+.burger-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+.burger-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-icon span {
+    width: 30px;
+    height: 4px;
+    background-color: rgba(97, 17, 6, 0.6);
+    transition: all 0.3s ease;
+}
+
+/* Скрываем меню по умолчанию */
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 250px; /* Установить ширину меню */
+    background-color: rgba(97, 17, 6, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Анимация для открытия меню */
+.menu.open {
+    display: block;
+}

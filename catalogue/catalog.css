@@ -1,0 +1,118 @@
+body {
+    font-family: Garamond, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    background-image: url('../background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Бургер-меню активное состояние */
+.menu.active {
+    display: block;
+}
+
+.burger-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+.burger-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-icon span {
+    width: 30px;
+    height: 4px;
+    background-color: rgba(97, 17, 6, 0.6);
+    transition: all 0.3s ease;
+}
+
+/* Скрываем меню по умолчанию */
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 250px; /* Устанавливаем ширину меню */
+    background-color: rgba(97, 17, 6, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Анимация для открытия меню */
+.menu.open {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+* Общие стили для мобильных устройств */
+body {
+    font-size: 14px; /* Уменьшаем размер шрифта для мобильных */
+}
+  
+/* Медиазапрос для экранов шириной до 768px */
+@media (max-width: 768px) {
+    .burger-menu {
+        top: 5px;
+        left: 5px;
+    }
+
+    .menu {
+        top: 40px; /* Уменьшаем расстояние для мобильных */
+        padding: 15px; /* Уменьшаем отступы */
+    }
+  
+    .menu ul li {
+        margin: 5px 0; /* Уменьшаем отступы между элементами меню */
+    }
+  
+    .menu ul li a {
+        font-size: 16px; /* Уменьшаем размер шрифта для мобильных */
+    }
+}
+  
+/* Медиазапрос для экранов шириной до 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* Уменьшаем шрифт еще больше для очень маленьких экранов */
+    }
+  
+    .burger-icon span {
+        width: 25px; /* Уменьшаем размер бургер-меню */
+        height: 3px;
+    }
+  
+    .menu {
+        padding: 10px; /* Уменьшаем отступы для очень маленьких экранов */
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Розарий ЧАЙНАЯ РОЗА</title>
+    <link rel="stylesheet" href="magic.css" />
+    <script src="magic.js" defer></script>
+    <link rel="icon" type="image/png" href="../favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <link rel="manifest" href="../site.webmanifest" />
+    
+    <style>
+      h2 {
+        margin-top: 20px; /* Установление отступа */
+      }
+      #game-area {
+        position: relative;
+        width: 600px;
+        height: 300px;
+        border: 2px solid #b3b1b1;
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 0.8);;
+        border-radius: 10px; /* Скругляем углы */
+      }
+      .rose {
+        position: absolute;
+        width: 150px; /* Увеличиваем ширину изображения розы */
+        height: 150px; /* Увеличьте высоту изображения розы */
+        background-image: url('MagicRose.png'); /* Путь к изображению розы */
+        background-size: contain; /* Устанавливаем contain, чтобы изображение не обрезалось */
+        background-repeat: no-repeat; /* Не повторять изображение */
+        cursor: pointer;
+      }
+      #score {
+        font-size: 24px;
+        margin-bottom: 10px;
+        
+      }
+      #start-btn {
+        padding: 10px 20px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="burger-menu">
+        <div class="burger-icon" id="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../about/about.html">О розарии </a></li>
+            <li><a href="../contacts/contact.html">Контакты</a></li>
+            <li><a href="../catalogue/catalog.html">Каталог роз</a></li>
+            <li><a href="../orders/order.html">Заказы</a></li>
+            <li><a href="../magic/magic.html">Поймай розу!</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="geometric-layout">
+        <div class="game-container">
+          <h2>Игра &laquo;Поймай розу!&raquo;</h2>
+          <div class="score">Очки: <span id="score">0</span></div>
+          <button id="start-btn">Начать игру</button>
+          <div id="game-area"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2024 Tea-Rose. Все права защищены.</p>
+    </footer>
+  </body>

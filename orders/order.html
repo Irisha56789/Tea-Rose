@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Розарий ЧАЙНАЯ РОЗА </title>
+    <link rel="stylesheet" href="order.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../favicon-48x48.png"
+      sizes="48x48"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../apple-touch-icon.png"
+    />
+    <link rel="manifest" href="../site.webmanifest" />
+  </head>
+  <body>
+    <header>      
+        <div class="burger-menu">
+          <div class="burger-icon" id="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="menu">
+            <ul>
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="../about/about.html">О розарии</a></li>
+              <li><a href="../catalogue/catalog.html">Каталог роз</a></li>
+              <li><a href="../orders/order.html">Заказы</a></li>
+              <li><a href="../contacts/contact.html">Контакты</a></li>
+              <li><a href="../magic/magic.html">Поймай розу!</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <!-- О формах оплаты -->
+    <section id="payment">
+      <h2>Цены и формы оплаты</h2>
+      <p>
+        С 01.03.2024 г. цена на саженцы составляет 700 руб./шт. Заказ может быть оплачен несколькими 
+        способами: СБП, Банковская карта, Банковская квитанция на р/сч, Электронный сертификат.
+      </p>
+    </section>
+
+    <!-- Доставка -->
+    <section id="deliveries">
+      <h2>Доставка</h2>
+      <div class="delivery">
+        <h3>Сроки доставки</h3>
+        <p>Доставка по Москве и Московской области: в течение 7 рабочих дней.</p>
+        <p>Доставка в другие регионы: в течение 20 рабочих дней.
+        </p>
+      </div>
+      <div class="delivery">
+        <h3>Стоимость доставки</h3>
+        <p>Стоимость доставки рассчитывается, исходя из действующих тарифов Почты России.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- Заказы-->
+    <section id="orders">
+      <h2>Как оформить заказ</h2>
+      <p>
+        Чтобы подать заявку, заполните короткую форму, и мы свяжемся с Вами для обсуждения вариантов оплаты и доставки.
+      </p>
+      </section>
+
+    <!---Форма для заказа -->
+    <section id="orderForm">
+      <h2>Форма для заказа</h2>
+      <form id="contactForm" action="http://localhost/tea-rose/orders/submit.php" method="POST">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required />
+        <span class="error" id="nameError"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <span class="error" id="emailError"></span>
+
+        <label for="message">Заказ на продукцию:</label>
+        <textarea id="message" name="message" required></textarea>
+        <span class="error" id="messageError"></span>
+
+        <button type="submit">Отправить</button>
+      </form>
+      <p>Email: dataplusinfo@rambler.ru</p>
+      <p>Телефон: <a href="tel:+79299890718">+7 (929) 989-07-18</a></p>
+      <p>Telegram: <a href="https://t.me/isosnovs">@isosnovs</a></p>
+    </section>
+
+    <script src="order.js"></script>
+    <footer>
+      <p>© 2024 Tea-Rose. Все права защищены.</p>
+    </footer>
+  </body>
+</html>
+
+

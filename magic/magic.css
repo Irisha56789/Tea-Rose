@@ -1,0 +1,214 @@
+/* Общие стили */
+h2 {
+  margin-top: 30px; /* Устанвливаем значение отступа */
+}
+
+body {
+  font-family: Garamond, 'Times New Roman', serif;
+  margin: 10; 
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  background-image: url('../background.jpg'); /* Путь к файлу с фоном */
+  background-size: cover; /* Чтобы изображение покрывало весь экран */
+  background-position: center; /* Центрирование изображения */
+  background-repeat: no-repeat; /* Не повторять изображение */
+}
+
+/* Бургер-меню активное состояние */
+.menu.active {
+  display: block;
+}
+
+.burger-menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+.burger-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger-icon span {
+  width: 30px;
+  height: 4px;
+  background-color: rgba(97, 17, 6, 0.6);
+  transition: all 0.3s ease;
+}
+
+/* Скрываем меню по умолчанию */
+.menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  width: 250px; /* Установить ширину меню */
+  background-color: rgba(97, 17, 6, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 10px 0;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Анимация для открытия меню */
+.menu.open {
+  display: block;
+}
+
+/* Стили для заголовка h2 */
+h2 {
+  font-family: Garamond, 'Times New Roman', serif; 
+  font-size: 48px; /* Размер шрифта */
+  color: rgb(103, 41, 41); /* Цвет текста */
+  text-align: center; /* Выравнивание по центру */
+  margin: 0px 0; /* Отступы сверху и снизу */
+}
+
+.geometric-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 2rem;
+}
+
+.wave-text {
+  margin-top: 50px; /* Отступ сверху для заголовка */
+  margin-bottom: 20px; /* Отступ снизу для заголовка */
+}
+
+/* Стили для кнопки start-btn */
+#start-btn {
+  font-family: Garamond, 'Times New Roman', serif; 
+  font-size: 24px; /* Размер шрифта */
+  color: #fff; /* Цвет текста */
+  background-color: #851010; /* Цвет фона кнопки */
+  border: none; /* Убираем рамку */
+  border-radius: 5px; /* Закругленные углы */
+  padding: 10px 20px; /* Внутренние отступы */
+  cursor: pointer; /* Курсор при наведении */
+  transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+/* Стили для score */
+.score {
+  font-size: 24px; /* Увеличиваем размер шрифта */
+  font-weight: bold; /* Делаем шрифт жирным */
+  color: #4b4b4b; /* Цвет текста */
+  margin: 20px 0; /* Отступ сверху и снизу */
+  max-width: 600px;
+  justify-content: center; /* Центрируем по вертикали */
+  text-align: center; /* Центрируем текст */
+  background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
+  padding: 10px; /* Отступ внутри блока */
+  border-radius: 10px; /* Скругляем углы */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для глубины */
+  border: 2px solid #d6d5d5;
+}
+
+/* Дополнительные стили для значения счета */
+.score span {
+  color: #C0392B; 
+  font-size: 28px; 
+  font-weight: bold; 
+}
+
+
+.wave-text {
+  font-size: 1.5rem;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.wave-text span {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  animation: wave 1.5s infinite ease-in-out;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.wave-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.wave-text span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+  
+  .game-container {
+      position: relative;
+      text-align: center;
+      justify-content: center; /* Выравниваем по горизонтали */
+      margin-top: 50px;
+  }
+  
+  #game-area {
+      position: relative;
+      width: 500px;
+      height: 300px;
+      background-color: rgba(255, 255, 255, 0.8);;
+      margin: 5px auto;
+      border: 2px solid #d6d5d5;
+  }
+  
+  #start-btn {
+      padding: 10px 20px;
+      background-color: #8B0000;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+  }
+  
+  #start-btn:hover {
+      background-color: #b20404;
+  }
+  footer {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px; /* Отступ снизу для футера */
+    font-size: 20px;  
+    color: black;     
+    font-weight: bold; 
+  }
+

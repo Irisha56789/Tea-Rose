@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Розарий ЧАЙНАЯ РОЗА</title>
+        <link rel="stylesheet" href="about.css" />
+        <link rel="stylesheet" href="catalog.css" /> 
+        <link rel="icon" type="image/png" href="../favicon-48x48.png" sizes="48x48" />
+        <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+        <link rel="shortcut icon" href="../favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../site.webmanifest" />
+        <style>
+            body {
+                font-family: Garamond, 'Times New Roman', serif;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                background-color: #f8f8f8;
+                background-image: url('../background.jpg');
+                padding: 10px;
+                text-align: center;
+            }
+            h1 {
+                color: rgb(82, 55, 55); /* Цвет текста подписей к изображениям */
+                font-size: 3.6em; /* Размер шрифта для заголовка */
+                margin: 20px 0; /* Отступы сверху и снизу */
+            }
+
+            .mosaic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.item {
+    text-align: center; /* Центрируем содержимое внутри контейнера */
+}
+
+.mosaic img {
+    width: 100%; /* Задаем ширину 100% для адаптивности */
+    height: auto; /* Высота будет адаптироваться пропорционально ширине */
+    object-fit: cover; /* Чтобы сохранить пропорции изображения */
+    transition: transform 0.3s; /* Плавный переход при наведении */
+}
+
+.mosaic img:hover {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+.caption {
+    color: rgb(71, 44, 44); /* Цвет текста подписей к изображениям */
+    text-align: center; /* Центрируем текст */
+    font-size: 1.5em; /* Размер шрифта */
+    font-weight: bold;
+    margin-top: 8px; /* Отступ сверху */
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .mosaic {
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки на устройствах с шириной до 768px */
+    }
+
+    .caption {
+        margin-left: 0; /* Убираем сдвиг для подписей */
+    }
+}
+
+@media (max-width: 480px) {
+    .mosaic {
+        grid-template-columns: 1fr; /* 1 колонка для самых маленьких экранов */
+    }
+
+    .caption {
+        font-size: 1.2em; /* Меньший размер шрифта для мобильных устройств */
+    }
+}
+
+            footer {
+                text-align: center; /* Центрируем текст в футере */
+                padding: 10px;
+                background-image: url('../background.jpg');
+            }
+
+            footer p {
+                font-size: 20px; 
+                font-weight: bold;
+                color: #333; /* Цвет текста */
+                text-align: center; /* Выравнивание текста по центру */
+            }
+    
+        </style>
+    </head>
+<body>
+    <header>
+        <h1>Каталог роз</h1>
+        <div class="burger-menu">
+            <div class="burger-icon" id="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../about/about.html">О розарии</a></li>
+                    <li><a href="../catalogue/catalog.html">Каталог роз</a></li>                    
+                    <li><a href="../orders/order.html">Заказы</a></li>
+                    <li><a href="../contacts/contact.html">Контакты</a></li>
+                    <li><a href="../magic/magic.html">Поймай розу!</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="about-container">
+        <section class="mosaic">
+            <div>
+                <img src="roza1.jpg" alt="Роза 1" />
+                <div class="caption">Ностальгия</div>
+            </div>
+            <div>
+                <img src="roza2.jpg" alt="Роза 2" />
+                <div class="caption">Черная магия</div>
+            </div>
+            <div>
+                <img src="roza3.jpg" alt="Роза 3" />
+                <div class="caption">Эдвин</div>
+            </div>
+            <div>
+                <img src="roza4.jpg" alt="Роза 4" />
+                <div class="caption">Нобилис</div>
+            </div>
+            <div>
+                <img src="roza5.jpg" alt="Роза 5" />
+                <div class="caption">Эдди Митчелл</div>
+            </div>
+            <div>
+                <img src="roza6.jpg" alt="Роза 6" />
+                <div class="caption">Терракота</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 TeaRose. Все права защищены.</p>
+    </footer>
+
+    <script src="catalog.js"></script>
+</body>
+</html>
